@@ -7,8 +7,16 @@ const BlogList = ({ blogs, title, handleDelete }) => {
                     <div className="blog-preview" key={blog.id}>
                         <h2>{blog.title}</h2>
                         <p>{blog.body}</p>
-                        <p>Written by {blog.author}</p>
-                        <button onClick={() => handleDelete(blog.id)}>Delete Blog Post</button>
+                        <p style={{
+                            paddingTop: "10px",
+                            paddingBottom: "10px"
+                        }}>Written by: {blog.author}</p>
+                        <button style={{
+                            border: "none",
+                            padding: "6px",
+                            borderRadius: "6px",
+                            cursor: "pointer"
+                        }} onClick={() => handleDelete(blog.id)}>Delete Blog Post</button>
                     </div>
                 ))}
             </div>
