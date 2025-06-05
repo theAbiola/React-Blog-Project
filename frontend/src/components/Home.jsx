@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react"
 import BlogList from "./BlogList.jsx";
 import useFetch from "../hooks/useFetch.js";
+import LoadingModal from "./LoadingModal.jsx";
 
 const Home = () => {
 
@@ -25,8 +26,8 @@ const Home = () => {
         <>
             <div className="home">
                 {blogs && <BlogList blogs={blogs} title="All Blogs" handleDelete={handleDelete} />}
-                {isLoading && <div>Loading...</div>}
-                {isError && <div>{isError}</div>}
+                {isLoading && <LoadingModal />}
+                {isError && <p>{isError}</p>}
             </div>
         </>
     );
