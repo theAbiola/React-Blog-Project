@@ -11,6 +11,12 @@ const BlogList = ({ blogs, title, handleDelete }) => {
                             paddingTop: "10px",
                             paddingBottom: "10px"
                         }}>Written by: {blog.author}</p>
+                        <button style={{
+                            border: "none",
+                            padding: "6px",
+                            borderRadius: "6px",
+                            cursor: "pointer"
+                        }} onClick={() => handleDelete(blog.id)}>Delete Blog Post</button>
                     </div>
                 ))}
             </div>

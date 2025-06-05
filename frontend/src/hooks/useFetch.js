@@ -13,14 +13,14 @@ function useFetch(url) {
         setTimeout(() => {
             fetch(url)
                 .then(res => {
-                    console.log(res)
+                    // console.log(res)
                     if (!res.ok) {
                         throw Error("Error fetching data, use a valid URL or endpoint")
                     }
                     return res.json()
                 })
                 .then((data) => {
-                    console.log(data)
+                    // console.log(data)
                     setResourceData(data)
                     setIsLoading(false)
                     setIsError(null)
