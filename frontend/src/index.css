@@ -39,7 +39,7 @@
 /* HOME SECTION */
 
 .content {
-  max-width: 650px;
+  max-width: 600px;
   margin: 40px auto;
   padding: 20px;
 }
@@ -49,6 +49,10 @@
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+}
+
+.blog-preview * {
+  text-decoration: none;
 }
 
 .blog-preview:hover {

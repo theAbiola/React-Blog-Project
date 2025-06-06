@@ -11,10 +11,10 @@ function useFetch(url) {
 
     useEffect(() => {
 
-        const abortControl = new AbortController()
+        const abortControl = new AbortController() //AbortControl helps us with the clean-up function
 
         setTimeout(() => {
-            fetch(url, { signal: abortControl.signal })
+            fetch(url, { signal: abortControl.signal }) //We pass abortControl.signal as the second parameter
                 .then(res => {
                     console.log(res)
                     if (!res.ok) {
@@ -36,9 +36,9 @@ function useFetch(url) {
                         setIsLoading(false)
                     }
                 })
-        }, 1000)
+        }, 200)
 
-        return () => abortControl.abort()
+        return () => abortControl.abort() //useEffect clean-up function
     }, [url])
 
     return { resourceData, isLoading, isError }
