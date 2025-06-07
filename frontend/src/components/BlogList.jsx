@@ -9,7 +9,6 @@ const BlogList = ({ blogs, title, handleDelete }) => {
                     <div className="blog-preview" key={blog.id}>
                         <Link to={`/blogs/${blog.id}`}>
                             <h2>{blog.title}</h2>
-                            <p>{blog.body}</p>
                             <p style={{
                                 paddingTop: "10px",
                                 paddingBottom: "10px"

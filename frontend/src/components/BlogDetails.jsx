@@ -16,7 +16,10 @@ const BlogDetails = () => {
             {blog &&
                 <article>
                     <h2>{blog.title}</h2>
-                    <p>{blog.body}</p>
+                    <p style={{
+                        paddingTop: "10px",
+                        paddingBottom: "10px"
+                    }}>{blog.body}</p>
                     <p style={{
                         paddingTop: "10px",
                         paddingBottom: "10px"
