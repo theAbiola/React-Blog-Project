@@ -30,7 +30,7 @@ let posts = [
     },
 ];
 
-let lastId = 3;
+let lastId = posts[posts.length - 1].id;
 
 const getAllPosts = (req, res) => {
     res.status(200).json(posts);
