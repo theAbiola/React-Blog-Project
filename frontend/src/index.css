@@ -65,7 +65,17 @@
   margin-bottom: 8px;
 }
 
-/* create new blog form */
+/* BLOG DETAILS SECTION */
+.blog-details button {
+  background: #f1356d;
+  color: #fff;
+  border: 0;
+  padding: 8px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+/* CREATE NEW BLOG FORM SECTION */
 .create {
   max-width: 400px;
   margin: 0 auto;
