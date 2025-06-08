@@ -7,7 +7,7 @@ const Create = () => {
     const [body, setBody] = useState('')
     const [author, setAuthor] = useState('Habib Abiola')
     const [isPending, setIsPending] = useState(false)
-    const navigate = useNavigate()
+    const navigate = useNavigate() //we initilize the useNavigate hook here
 
     function handleSubmit(event) {
         event.preventDefault()
@@ -22,7 +22,7 @@ const Create = () => {
         }).then(() => {
             console.log('Blog submitted')
             setIsPending(false)
-            navigate('/')
+            navigate('/') //We use the useNavigate hook here
         })
     }
 
