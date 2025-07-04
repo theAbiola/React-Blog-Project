@@ -22,7 +22,7 @@ const Create = () => {
         }).then(() => {
             console.log('Blog submitted')
             setIsPending(false)
-            navigate('/') //We use the useNavigate hook here
+            navigate('/') //We use the useNavigate hook here to redirect the user to the home page after submitting the blog
         })
     }
 
