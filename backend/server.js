@@ -6,7 +6,8 @@ const app = express();
 
 const port = 3500;
 
-app.use(cors({ origin: "http://localhost:4173" })); // Allow frontend to access backend
+app.use(cors()); // Allow frontend to access backend
+// app.use(cors({ origin: "http://localhost:5174" })) // Allow frontend to access backend
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
